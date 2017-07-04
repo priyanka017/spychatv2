@@ -1,0 +1,6 @@
+#global variables file
+
+#INSTAGRAM API ACESS TOKEN
+APP_ACESS_TOKEN =''
+#INSTAGRAM API BASE URL
+BASE_URL =''

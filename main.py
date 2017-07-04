@@ -1,1 +1,1 @@
-#main.py file initiated
+#main.py file initialized
