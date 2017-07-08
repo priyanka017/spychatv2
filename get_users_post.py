@@ -1,11 +1,10 @@
-import requests
+import requests,urllib
+from get_user_id import get_user_id
 from constants import APP_ACESS_TOKEN ,BASE_URL
-from get_user_post import get_user_post
+from get_users_post import get_users_post
 
-def get_usr_post():
-    #function logic
+ #function logic
     def get_users_post(insta_username):
-        # function logic
         user_id = get_user_id(insta_username)
         if user_id == None:
             print 'User does not exists'
