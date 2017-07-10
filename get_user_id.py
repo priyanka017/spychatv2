@@ -1,6 +1,14 @@
-def get_user_id(insta_usernae):
+import requests
+from constants import APP_ACESS_TOKEN, BASE_URL
+
+
+def get_user_id(instagram_username):
+    user_id = get_user_id(instagram_username)
+    if user_id == None:
+        print 'User does not exist!'
+        exit()
     #function logic
-    request_url = (BASE_URL + 'users/search?q=%s&access_token=%s') % (insta_username, APP_ACCESS_TOKEN)
+    request_url = (BASE_URL + 'users/%s/media/recent/?access_token=%s') % (user_id,APP_ACESS_TOKEN)
     print 'GET request url : %s' % (request_url)
     user_info = requests.get(request_url).json()
 
@@ -9,7 +17,9 @@ def get_user_id(insta_usernae):
         if len(user_info['data']):
             return user_info['data'][0]['id']
         else:
-            return None
+            print 'There is no recent post of the user!'
+            exit()
+
     else:
         print 'Status code other than 200 received!'
         exit()

@@ -1,9 +1,11 @@
 #self info functions
 import requests
-from constants import APP_ACESS_TOKEN,BASE_URL
+from constants import APP_ACESS_TOKEN ,BASE_URL
+
+
 def self_info():
     #function logic
-    request_url = (BASE_URL + 'users/self/?access_token=%s') % (APP_ACCESS_TOKEN)
+    request_url = (BASE_URL + 'users/self/?4151591513.f66ea55.13515bcb8e1245a5bbca70ca778e55c4=%s') % ('4151591513.f66ea55.13515bcb8e1245a5bbca70ca778e55c4')
     print 'GET request url : %s' % (request_url)
     user_info = requests.get(request_url).json()
 

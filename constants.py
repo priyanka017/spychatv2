@@ -1,6 +1,6 @@
 #global variables file
 
 #INSTAGRAM API ACESS TOKEN
-APP_ACESS_TOKEN =''
+APP_ACESS_TOKEN ='4151591513.f66ea55.13515bcb8e1245a5bbca70ca778e55c4'
 #INSTAGRAM API BASE URL
-BASE_URL =''
+BASE_URL ='https://api.instagram.com/v1/'
