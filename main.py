@@ -3,6 +3,9 @@ import requests
 import urllib
 from textblob import TextBlob
 from constants import APP_ACESS_TOKEN,BASE_URL
+from get_own_post import get_own_post
+
+from start_bot import start_bot
 
 start_bot()
 

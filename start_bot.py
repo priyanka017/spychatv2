@@ -8,9 +8,6 @@ from get_post_comment import get_post_comment
 from del_negative_comments import delete_negative_comment
 
 
-
-
-
 def start_bot():
     while True:
         print '\n'

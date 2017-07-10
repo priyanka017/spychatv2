@@ -3,8 +3,7 @@ from constants import APP_ACESS_TOKEN, BASE_URL
 
 
 def get_user_id(instagram_username):
-    user_id = get_user_id(instagram_username)
-    if user_id == None:
+    if get_user_id == None:
         print 'User does not exist!'
         exit()
     #function logic
@@ -22,4 +21,3 @@ def get_user_id(instagram_username):
 
     else:
         print 'Status code other than 200 received!'
-        exit()
