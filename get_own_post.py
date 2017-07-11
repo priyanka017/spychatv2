@@ -5,7 +5,7 @@ from constants import APP_ACESS_TOKEN,BASE_URL
 
 def get_own_post():
     #functions logic
-    request_url = (BASE_URL + 'users/self/media/recent/?=4151591513.f66ea55.13515bcb8e1245a5bbca70ca778e55c4%s') % (APP_ACCESS_TOKEN)
+    request_url = (BASE_URL + 'users/self/media/recent/?access_token=%s') % (APP_ACESS_TOKEN)
     print 'GET request url : %s' % (request_url)
     own_media = requests.get(request_url).json()
 
@@ -20,3 +20,4 @@ def get_own_post():
             print 'Post does not exist!'
     else:
         print 'Status code other than 200 received!'
+get_own_post()

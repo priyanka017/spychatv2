@@ -1,6 +1,5 @@
 #fetches user info from instagram
 # from get_user_id import get_user_id
-
 import requests
 from constants import APP_ACESS_TOKEN,BASE_URL
 
@@ -26,3 +25,8 @@ def get_user_info(instagram_username):
     else:
         print 'Status code other than 200 received!'
         exit()
+get_user_info()
+
+
+
+
