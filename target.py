@@ -4,8 +4,8 @@ from constants import APP_ACESS_TOKEN,BASE_URL
 from get_user_id import get_user_id
 from get_post_comment import *
 
-def target_a_comment(insta_username)
-    user_id = get_user_id(insta_username)
+def target_a_comment(instagram_username)
+    user_id = get_user_id(instagram_username)
     payload = {"access_token":APP_ACESS_TOKEN}
     request_url = (BASE_URL + 'users/%s/media/recent/?access_token=%s') % (user_id,APP_ACESS_TOKEN)
 
@@ -16,4 +16,4 @@ def target_a_comment(insta_username)
         print"come at ccd:
     else:
         print"error"
-target_a_comment(insta_username='sharmatanu9878')
+target_a_comment(instagram_username='yogesh_biebz')

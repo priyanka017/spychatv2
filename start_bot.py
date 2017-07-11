@@ -9,7 +9,6 @@ from get_users_post import get_users_post
 from like_user_post import like_a_post
 from get_post_comment import post_a_comment
 from del_negative_comments import delete_negative_comment
-
 # from termcolor import colored
 def start_bot():
     while True:

@@ -1,5 +1,5 @@
 import requests
-import urllib
+#import urllib
 from constants import BASE_URL,APP_ACESS_TOKEN
 from get_users_post import get_users_post
 from get_post_id import get_post_id

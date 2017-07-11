@@ -3,8 +3,6 @@ from constants import APP_ACESS_TOKEN,BASE_URL
 from get_user_id import get_user_id
 from textblob import *
 
-
-
 def delete_negative_comment(insta_username):
     media_id = get_user_id(insta_username)
     request_url = (BASE_URL + 'media/%s/comments/?access_token=%s') % (media_id, APP_ACESS_TOKEN)
