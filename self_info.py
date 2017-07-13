@@ -8,7 +8,7 @@ def self_info():
     print 'GET request url:%s'%(request_url)
     user_info= requests.get(request_url).json()
     if user_info['meta']['code']==200:
-        # if there is some information of user
+        #  there is some information of user
         if len(user_info['data']):
             print'User name:%s'%(user_info['data']['username'])
             print 'No. of Followers: %s'%(user_info['data']['counts']['followed_by'])
@@ -17,10 +17,9 @@ def self_info():
 
         else:
             print'Users does not Exist!'
-
     else:
         print"Status code other than 200 received!"
-self_info()
+
 
 
 

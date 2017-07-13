@@ -1,9 +1,12 @@
 import requests
-#import urllib
+import urllib
 from constants import BASE_URL,APP_ACESS_TOKEN
 from get_users_post import get_users_post
 from get_post_id import get_post_id
+
+user = 'yogesh_biebz'
 def like_a_post(instagram_username):
+    # Overall logic of this function
     media_id =get_post_id(instagram_username)
     request_url = (BASE_URL + 'media/%s/likes') % (media_id)
     payload = {"access_token":APP_ACESS_TOKEN}
@@ -13,4 +16,4 @@ def like_a_post(instagram_username):
         print 'Like was successful!'
     else:
         print 'Your like was unsuccessful. Try again!'
-like_a_post(instagram_username=)
+

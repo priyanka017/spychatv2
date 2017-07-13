@@ -24,6 +24,6 @@ def get_users_post(instagram_username):
     else:
          print 'Status code other than 200 received!'
     return None
-get_users_post()
+#get_users_post()
 
 

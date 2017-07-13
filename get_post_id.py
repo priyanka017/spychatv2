@@ -3,6 +3,7 @@ from constants import APP_ACESS_TOKEN,BASE_URL
 from get_user_id import get_user_id
 
 def get_post_id(insta_username):
+    # Overall logic of this function
     user_id = get_user_id(insta_username)
     if user_id == None:
         print 'User does not exist!'

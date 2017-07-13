@@ -1,9 +1,13 @@
 import requests
 from constants import APP_ACESS_TOKEN, BASE_URL
 
-def get_user_id(instagram_username):
+from get_user_id import get_user_id
+
+def get_media_id():
  #FUNCTION LOGIC
-    request_url = (BASE_URL + 'users/search?q=%s&access_token=%s') % (instagram_username,APP_ACESS_TOKEN)
+    instagram_username = "yogesh_biebz"
+    user_id = get_user_id(instagram_username)
+    request_url = (BASE_URL + 'users/%s/media/recent/?access_token=%s') % (user_id,APP_ACESS_TOKEN)
     print 'GET request url :%s' % (request_url)
     user_info = requests.get(request_url).json()
     print user_info

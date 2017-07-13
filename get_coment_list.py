@@ -3,6 +3,7 @@ from constants import BASE_URL,APP_ACESS_TOKEN
 from get_post_id import get_post_id
 
 def get_comment_list(insta_username):
+    # Overall logic of this function
     media_id = get_post_id(insta_username)
     request_url = (BASE_URL + 'media/%s/comments/?access_token=%s') % (media_id,APP_ACESS_TOKEN)
     print 'GET request url : %s' % (request_url)
