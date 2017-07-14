@@ -2,6 +2,8 @@ import requests
 from constants import APP_ACESS_TOKEN,BASE_URL
 from get_post_id import get_post_id
 
+#insta_username= "yogesh_biebz"
+
 def like_list(insta_username):
   # Overall logic of this function
   media_id = get_post_id(insta_username)
@@ -17,3 +19,4 @@ def like_list(insta_username):
         print"{}. {} ({}) - {}".format(index+1,user_likes['full_name'],user_likes['id'],user_likes['username'])
   else:
     print("There is no Like regarding this post.")
+#like_list(insta_username)

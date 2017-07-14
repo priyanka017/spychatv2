@@ -10,6 +10,8 @@ from self_info import self_info
 from get_users_post import get_users_post
 from get_media_id import get_media_id
 from colorama import Fore,Back,Style
+from get_like_list import *
+from get_coment_list import *
 spy_name = "PRIYANKA"
 spy_salutation= "Ms."
 spy_name =  spy_salutation + " "+ spy_name
@@ -51,6 +53,7 @@ def start_insta():
                 like_a_post()
             elif menu_choice == 7:
                 post_a_comment(instagram_username)
+
             elif menu_choice == 8:
                 delete_negative_comment(instagram_username)
             else:

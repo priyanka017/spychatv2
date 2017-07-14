@@ -2,6 +2,7 @@ import requests,urllib
 from constants import BASE_URL,APP_ACESS_TOKEN
 from get_post_id import get_post_id
 
+#insta_username= "yogesh_biebz"
 def get_comment_list(insta_username):
     # Overall logic of this function
     media_id = get_post_id(insta_username)
@@ -22,3 +23,4 @@ def get_comment_list(insta_username):
 
     else:
         print'Status code other than 200.'
+#get_comment_list(insta_username)
